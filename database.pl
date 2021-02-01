@@ -155,7 +155,6 @@ print_user(X) :- kb(X,Gender,Age,Ability,Lesson,University),
                  write(University),nl.
 
 delete_record_KB :-
-                %put the id to delete
                 write('enter a name to delete:'),
                 read(Name),
 
