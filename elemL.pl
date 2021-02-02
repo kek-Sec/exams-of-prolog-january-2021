@@ -1,3 +1,4 @@
+%Structure construction (Accumulation) in the proposal head.
 elemL([],_,[]).
 
 elemL([H1|T1],L2,[H1|T3]) :-
@@ -7,6 +8,8 @@ elemL([H1|T1],L2,[H1|T3]) :-
 elemL([H|T],L2,L3) :-
                      \+member(H,L2),
                      elemL(T,L2,L3).
+		     
+%Construction of structure (Accumulation) in the proposition body.
 elemLB(L1,L2,L3) :-
                 elemLB1(L1,L2,[],L3).
 
